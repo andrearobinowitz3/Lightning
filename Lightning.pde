@@ -33,7 +33,7 @@ void setup()
 {
 // System.out.println("setup!"); 
  size(900,250); // these should be at least as large has the howWidePhoto and howTallPhoto parameters
- // image1 = loadImage("sfnight1.jpeg");
+ image1 = loadImage("sfnight1.jpg");
  // from https://www.jharrisonphoto.com/Landscapes/San-Francisco-City-Scapes-and/i-PQLTk4b/
  // image1.resize(howWidePhoto, howTallPhoto);
  // background(image1);
@@ -122,6 +122,7 @@ if (returnRandomNumber(99)<strikePercentage) {
 void mousePressed()
 {
 // background(image1);
+background(54);
 drawBolt(mouseX, mouseY, howLongIsBolt, 3,30, 20);
 thunderCountDown = thunderDelay;
 }
