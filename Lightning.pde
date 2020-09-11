@@ -37,6 +37,7 @@ void setup()
  // from https://www.jharrisonphoto.com/Landscapes/San-Francisco-City-Scapes-and/i-PQLTk4b/
  // image1.resize(howWidePhoto, howTallPhoto);
  // background(image1);
+ background(54);
  frameRate(defaultFrameRate); // slow down redraw to keep lightning on screen
  // thunderSoundFile = new SoundFile(this, "thunder.mp3");  // Load a soundfile and play it back
  // from https://www.freesoundeffects.com/free-sounds/thunder-sounds-10040/
@@ -95,6 +96,7 @@ void drawBolt(int startX, int startY, int yLimit, int sW, int xVar, int splitPro
 void draw()
 {
 //background(image1); //make the city background the background.
+background(54);
 thunderCountDown--; //each time we enter draw, the value of thunderCountDown decreases.
 if (thunderCountDown == 0) {
  // when thunderCountDown == zero, then we play the sound of thunder.
