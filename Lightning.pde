@@ -1,5 +1,6 @@
 /* Lightning City Scape with Splitting Bolts */
-import processing.sound.*; // load the Sound Library
+
+//import processing.sound.*; // load the Sound Library
 
 
 // GLOBAL PARAMETERS
@@ -17,7 +18,7 @@ int startY = 0;
 int endX = 0;                  // where a lightning bolt line segment stops
 int endY = 0;
 
-SoundFile thunderSoundFile;  //  soundfile that stores the thunder sound
+// SoundFile thunderSoundFile;  //  soundfile that stores the thunder sound
 
 int thunderCountDown; // keeps track of how long since lightning strike
 
@@ -36,7 +37,7 @@ void setup()
  image1.resize(howWidePhoto, howTallPhoto);
  background(image1);
  frameRate(defaultFrameRate); // slow down redraw to keep lightning on screen
- thunderSoundFile = new SoundFile(this, "thunder.mp3");  // Load a soundfile and play it back
+ // thunderSoundFile = new SoundFile(this, "thunder.mp3");  // Load a soundfile and play it back
  // from https://www.freesoundeffects.com/free-sounds/thunder-sounds-10040/
 }
 
@@ -96,7 +97,7 @@ background(image1); //make the city background the background.
 thunderCountDown--; //each time we enter draw, the value of thunderCountDown decreases.
 if (thunderCountDown == 0) {
  // when thunderCountDown == zero, then we play the sound of thunder.
- thunderSoundFile.play();
+ //thunderSoundFile.play();
 }
 if (returnRandomNumber(99)<strikePercentage) {
  // lighting isnt drawn every time draw is run. To make it more realistic,
