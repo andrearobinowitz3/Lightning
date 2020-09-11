@@ -95,9 +95,8 @@ void drawBolt(int startX, int startY, int yLimit, int sW, int xVar, int splitPro
 
 void draw()
 {
-
-System.out.println("draw"); 
-background(image1); //make the city background the background.
+//background(image1); //make the city background the background.
+background(gray);
 thunderCountDown--; //each time we enter draw, the value of thunderCountDown decreases.
 if (thunderCountDown == 0) {
  // when thunderCountDown == zero, then we play the sound of thunder.
@@ -122,7 +121,8 @@ if (returnRandomNumber(99)<strikePercentage) {
 
 void mousePressed()
 {
-background(image1);
+// background(image1);
+background(gray);
 drawBolt(mouseX, mouseY, howLongIsBolt, 3,30, 20);
 thunderCountDown = thunderDelay;
 }
