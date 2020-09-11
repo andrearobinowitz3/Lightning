@@ -35,7 +35,7 @@ void setup()
  size(900,250); // these should be at least as large has the howWidePhoto and howTallPhoto parameters
  image1 = loadImage("sfnight1.jpeg");
  // from https://www.jharrisonphoto.com/Landscapes/San-Francisco-City-Scapes-and/i-PQLTk4b/
- image1.resize(howWidePhoto, howTallPhoto);
+ // image1.resize(howWidePhoto, howTallPhoto);
  // background(image1);
  background(54);
  image(image1,0,0);
@@ -97,7 +97,7 @@ void drawBolt(int startX, int startY, int yLimit, int sW, int xVar, int splitPro
 void draw()
 {
 //background(image1); //make the city background the background.
-background(54);
+// background(54);
 thunderCountDown--; //each time we enter draw, the value of thunderCountDown decreases.
 if (thunderCountDown == 0) {
  // when thunderCountDown == zero, then we play the sound of thunder.
