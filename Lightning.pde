@@ -31,14 +31,12 @@ return ((int) (Math.random()*(max+1)));
 // MAIN FUNCTIONS
 void setup()
 {
-// System.out.println("setup!"); 
  size(900,250); // these should be at least as large has the howWidePhoto and howTallPhoto parameters
  image1 = loadImage("sfnight1.jpeg");
  // from https://www.jharrisonphoto.com/Landscapes/San-Francisco-City-Scapes-and/i-PQLTk4b/
- // image1.resize(howWidePhoto, howTallPhoto);
- // background(image1);
- // background(54);
- image(image1,0,0);
+ image1.resize(howWidePhoto, howTallPhoto);
+ // background(image1);   // GITHUB needs to be unhidden
+ background(54);  // GITHUB: needs to be hidden
  frameRate(defaultFrameRate); // slow down redraw to keep lightning on screen
  // thunderSoundFile = new SoundFile(this, "thunder.mp3");  // Load a soundfile and play it back
  // from https://www.freesoundeffects.com/free-sounds/thunder-sounds-10040/
@@ -96,8 +94,8 @@ void drawBolt(int startX, int startY, int yLimit, int sW, int xVar, int splitPro
 
 void draw()
 {
-//background(image1); //make the city background the background.
-// background(54);
+//background(image1); //make the city background the background.   GITHUB Needs to be unhidden
+background(54); // GITHUB Needs to be hidden
 thunderCountDown--; //each time we enter draw, the value of thunderCountDown decreases.
 if (thunderCountDown == 0) {
  // when thunderCountDown == zero, then we play the sound of thunder.
@@ -122,8 +120,8 @@ if (returnRandomNumber(99)<strikePercentage) {
 
 void mousePressed()
 {
-// background(image1);
-background(54);
+// background(image1);   // GITHUB Needs to be unhidden
+background(54); // GITHUB Needs to be hidden
 drawBolt(mouseX, mouseY, howLongIsBolt, 3,30, 20);
 thunderCountDown = thunderDelay;
 }
