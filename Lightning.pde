@@ -35,9 +35,10 @@ void setup()
  size(900,250); // these should be at least as large has the howWidePhoto and howTallPhoto parameters
  image1 = loadImage("sfnight1.jpeg");
  // from https://www.jharrisonphoto.com/Landscapes/San-Francisco-City-Scapes-and/i-PQLTk4b/
- // image1.resize(howWidePhoto, howTallPhoto);
+ image1.resize(howWidePhoto, howTallPhoto);
  // background(image1);
  background(54);
+ image(image1,0,0);
  frameRate(defaultFrameRate); // slow down redraw to keep lightning on screen
  // thunderSoundFile = new SoundFile(this, "thunder.mp3");  // Load a soundfile and play it back
  // from https://www.freesoundeffects.com/free-sounds/thunder-sounds-10040/
