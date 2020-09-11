@@ -31,7 +31,7 @@ return ((int) (Math.random()*(max+1)));
 // MAIN FUNCTIONS
 void setup()
 {
-System.out.println("setup!"); 
+// System.out.println("setup!"); 
  size(900,250); // these should be at least as large has the howWidePhoto and howTallPhoto parameters
  image1 = loadImage("sfnight1.jpeg");
  // from https://www.jharrisonphoto.com/Landscapes/San-Francisco-City-Scapes-and/i-PQLTk4b/
