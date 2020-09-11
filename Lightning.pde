@@ -31,6 +31,7 @@ return ((int) (Math.random()*(max+1)));
 // MAIN FUNCTIONS
 void setup()
 {
+System.out.println("setup!"); 
  size(900,250); // these should be at least as large has the howWidePhoto and howTallPhoto parameters
  image1 = loadImage("sfnight1.jpeg");
  // from https://www.jharrisonphoto.com/Landscapes/San-Francisco-City-Scapes-and/i-PQLTk4b/
@@ -93,6 +94,8 @@ void drawBolt(int startX, int startY, int yLimit, int sW, int xVar, int splitPro
 
 void draw()
 {
+
+System.out.println("draw"); 
 background(image1); //make the city background the background.
 thunderCountDown--; //each time we enter draw, the value of thunderCountDown decreases.
 if (thunderCountDown == 0) {
